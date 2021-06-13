@@ -16,6 +16,6 @@ const solution = (input) => {
 r1.on("line", (input) => {
   solution(input);
   r1.close();
-}).on("close", function () {
+}).on("close", () => {
   process.exit();
 });
