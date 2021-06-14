@@ -89,3 +89,6 @@
 # return arg1 , arg2 가능 ㄷㄷㄷㄷㄷㄷ
 # 가변인자 는 * , for in 돌려주면 펴남
 # 전역변수 쓰려먼 global 써야함 충격
+
+# appendleft(#)
+# popleft() or pop(0)

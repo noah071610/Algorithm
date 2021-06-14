@@ -22,10 +22,13 @@
 
 # print("<"+ ", ".join(str(i) for i in answer) +">")
 
+#❗❗❗❗
 # 위에는 시도했으나 시간초과로 실패 queue를 쓰는게 아니였다
+#❗❗❗❗
 
 N,K = map(int,input().split())
-arr = [i for i in range(1,N+1)]
+arr = [i for i in range(1,N+1)] # 배열 만들기❗❗❗❗
+# 자스로는 Array.from({length: N},(v,i)=> i+1) 인데 자스가 더좋다..ㅎ
 
 answer = []
 target = 0 # 뽑아낼 타겟 인덱스번호
@@ -35,7 +38,7 @@ for _ in range(N):
     if target >= len(arr): # 타켓 인덱스가 arr 값을 넘어가면
         target = target%len(arr) 
         # 나머지 연산자로 다시 0부터 시작해 찾는다.
-        # target이 6 이고 arr가 5면 6%5 = 1이 타겟 인덱스번호
+        # target이 6 이고 arr가 5면 6%5 = 1이 타겟 인덱스번호❗❗❗❗
     answer.append(str(arr.pop(target)))
 print("<",", ".join(answer),">", sep='')
 
