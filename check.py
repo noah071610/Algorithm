@@ -92,3 +92,11 @@
 
 # appendleft(#)
 # popleft() or pop(0)
+
+arr = list(i+1 for i in range(5))
+hello_world = "Hello World"
+print(list(map(str,arr)))
+print(hello_world[0:3:2])
+print(hello_world[::1])
+print(max(hello_world))
+print(sum(arr))

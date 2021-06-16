@@ -17,7 +17,9 @@ for i in range(len(input)) :
   else :
     number += input[i]
 
-print(reduce(lambda x, y: x + y, map(int,stack)))
+# ❗❗❗❗ max(A), min(A), reduce(), 
+print(sum(map(int,stack)))
+# print(reduce(lambda x, y: x + y, map(int,stack)))
 
 # 후기 : reduce함수도 js랑 똑같다 조금 복잡할뿐..
 # 구지 네 자연수가 아니더라도 배열이 짝수면 활용 가능하다.
