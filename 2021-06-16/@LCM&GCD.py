@@ -4,6 +4,8 @@ from math import gcd,lcm
 N,M = list(map(int,stdin.readline().split()))
 
 def GCD(x,y) :
+  # return gcd(y, x % y) if y else x 
+  # 이렇게 재귀로도 가능하다. 이게 더 편한듯?
   while(y) :
     x,y = y , x % y
     # 유클리드 호제법
