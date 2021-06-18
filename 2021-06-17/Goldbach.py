@@ -30,3 +30,8 @@ while True :
       n = number - f
       if(isPrime(n)) :
         print(f"{number} = {f} + {n}")
+        naljiBreak = False
+        break
+  if naljiBreak :
+    print("Goldbach's conjecture is wrong.")
+

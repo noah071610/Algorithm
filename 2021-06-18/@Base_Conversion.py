@@ -10,7 +10,7 @@
 
 # A진법으로 나타낸 수를 10진법으로 변환하였을 때의 값은 양의 정수이며 220보다 작다.
 
-from sys import stdin
+"""from sys import stdin
 
 system = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -28,5 +28,21 @@ while res > 0 :
   answer.insert(0,system[res%B])
   res //= B
 
-print(" ".join(answer))
+print(" ".join(answer))"""
 
+# 시간초과.. 뭐가 문제지????
+
+
+x, y = map(int, input().split())
+z = int(input())
+a = list(map(int, input().split()))
+ten = 0
+answer =[]
+for i in range(z):
+    ten += a[-1] * (x**i)
+    a.pop(-1)
+while ten !=0:
+    answer.append(str(ten % y))
+    ten = ten // y
+
+print(' '.join(answer[::-1]))
