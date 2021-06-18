@@ -36,6 +36,8 @@ print(deci2bir(deci))
 easy = format(int(stdin.readline()),'b')
 print(easy)
 
+print(bin(int(input(),8))[2:])
+
 print("2진수에서 8진수로 :")
 bir = stdin.readline().strip()[::-1]
 print(bir2octal(bir))

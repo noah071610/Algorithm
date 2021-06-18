@@ -96,4 +96,4 @@
 import itertools
 
 print(int("1234"[::-1]))
-
+print(bin(abs(int(input().strip()))))
