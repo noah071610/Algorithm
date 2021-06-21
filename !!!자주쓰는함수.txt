@@ -26,3 +26,22 @@ reduce(lambda x, y: x + y, list)
 combinations() // AB AC AD BC BD CD
 combinations_with_replacement() // AA AB AC AD BB BC BD CC CD DD
 repeat(10을 ,3번)
+
+==== 숫자를 하나하나 배열로
+list(str(num))
+
+==== range 참고
+range(0) 이면 값 없다
+range(1) 이면 0만 왜냐하면 0이상 1미만 이기 때문에
+
+==== 띄어쓰는 숫자 한줄씩 입력해서 이중배열화
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+arr = [list(map(int,input().split())) for _ in range(N)]
+
+=== indexError 
+try {}
+except IndexError :
+  continue

@@ -93,12 +93,20 @@
 # appendleft(#)
 # popleft() or pop(0)
 
-import itertools
+# import itertools
 
-print(int("1234"[::-1]))
-print(bin(abs(int(input().strip()))))
+# print(int("1234"[::-1]))
+# print(bin(abs(int(input().strip()))))
 
-num = 10
-num = list(str(num))
+# num = 10
+# num = list(str(num))
 
-print(num)
+# print(num)
+
+N,M = map(int,input().split())
+arr = []
+i=7
+while i != 0 :
+  if i == M-1 :
+    arr.append(i)
+  
