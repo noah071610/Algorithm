@@ -39,8 +39,7 @@ a = list(map(int, input().split()))
 ten = 0
 answer =[]
 for i in range(z):
-    ten += a[-1] * (x**i)
-    a.pop(-1)
+    ten += a.pop(-1) * (x**i)
 while ten !=0:
     answer.append(str(ten % y))
     ten = ten // y

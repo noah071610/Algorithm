@@ -97,3 +97,8 @@ import itertools
 
 print(int("1234"[::-1]))
 print(bin(abs(int(input().strip()))))
+
+num = 10
+num = list(str(num))
+
+print(num)
