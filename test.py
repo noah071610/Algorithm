@@ -103,10 +103,7 @@
 
 # print(num)
 
-N,M = map(int,input().split())
-arr = []
-i=7
-while i != 0 :
-  if i == M-1 :
-    arr.append(i)
-  
+from itertools import repeat
+
+x = repeat(10,range(3))
+print(x)

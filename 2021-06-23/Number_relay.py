@@ -20,3 +20,4 @@ c += ((int(n) - (10 ** n_len)) + 1) * (n_len + 1)
 print(c)
 
 # https://www.acmicpc.net/problem/1748
+# 후기 : 공식은 때로는 외워야지 답이나온다.
