@@ -36,9 +36,6 @@ while stack and i < N:
     # 스택 니 이전 값들도 비교할꺼야 스택 끝값은 팝으로 빼.
     # 다 비교해서 stack값이 없다고? 그럼 루프 빠져나가는거지
   stack.append(i)
-  print(f"{i}번째 ==========")
-  print(f"stack : {stack}")
-  print(f"result : {result}")
   i += 1
 
 # ❗❗❗❗
