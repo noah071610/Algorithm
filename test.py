@@ -105,5 +105,5 @@
 
 from itertools import repeat
 
-x = repeat(10,range(3))
+
 print(x)

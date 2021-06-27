@@ -45,3 +45,8 @@ arr = [list(map(int,input().split())) for _ in range(N)]
 try {}
 except IndexError :
   continue
+
+=== spread operator
+*x
+...x
+
