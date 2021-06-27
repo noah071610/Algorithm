@@ -1,6 +1,4 @@
-from itertools import combinations
-import itertools #조합 함수
-
+import itertools
 N = int(input())
 S = [list(map(int, input().split())) for _ in range(N)]
 members = [i for i in range(N)]
