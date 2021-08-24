@@ -13,6 +13,7 @@ for _ in range(N) :
   x = int(input())
   print(calc(x))
 
+
   # 이렇게도 됨
   # n = [1,2,4]
   # for i in range(3,x) :
