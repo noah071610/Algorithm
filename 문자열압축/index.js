@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/60057
+
 function solution(s) {
   let answer = [];
   for (let i = 1; i <= Math.floor(s.length / 2); i++) {

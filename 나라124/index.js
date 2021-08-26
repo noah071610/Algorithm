@@ -3,7 +3,6 @@
 function solution(n) {
   let answer = "";
   while (n > 0) {
-    console.log(n);
     switch (n % 3) {
       case 1:
         answer = "1" + answer;
