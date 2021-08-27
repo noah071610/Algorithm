@@ -1,9 +1,9 @@
 // https://programmers.co.kr/learn/courses/30/lessons/42587
 
 function solution(priorities, location) {
-  let list = priorities.map((t, i) => ({
+  let list = priorities.map((v, i) => ({
     my: i === location,
-    val: t,
+    val: v,
   }));
   let count = 0;
   while (true) {
