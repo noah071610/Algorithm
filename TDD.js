@@ -1,4 +1,4 @@
-import app from "./index";
+import app from "./배열과정렬/포켓몬";
 import request from "supertest";
 import should from "should";
 
