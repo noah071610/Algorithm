@@ -16,7 +16,6 @@ list[Number(kim) - 1] = 1;
 let cnt = 0;
 let naljiBreak = false;
 while (!naljiBreak && list.length > 1) {
-  console.log(list);
   for (let i = 0; i < list.length; i++) {
     if (i % 2 === 0) {
       if (i + 1 === list.length) {
@@ -39,6 +38,5 @@ while (!naljiBreak && list.length > 1) {
   }
   list = list.filter((v) => v !== -1);
   cnt++;
-  console.log(`#`, cnt);
 }
 naljiBreak ? console.log(cnt) : console.log(-1);

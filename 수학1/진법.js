@@ -32,6 +32,10 @@ function binary(n) {
   return answer;
 }
 
+function easy2solution(n) {
+  return parseInt([...n.toString(3)].reverse().join(""), 3);
+}
+
 const input = { target: 322, num: 8 };
 const getSome = solution(input.target, input.num);
 
