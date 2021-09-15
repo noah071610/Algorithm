@@ -1,9 +1,3 @@
-// var fs = require("fs")
-// var input = fs
-//   .readFileSync("/dev/stdin")
-//   .toString()
-//   .split("\n");
-
 let input = "2 1 2";
 
 const [n, lim, kim] = input.split(" ");
