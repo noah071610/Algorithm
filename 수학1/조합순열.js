@@ -21,6 +21,19 @@ function permutation(arr, selectedNum) {
   return result;
 }
 
+const dfs = (nums, num, arr = []) => {
+  if (num === n) permus.push([...arr]);
+  else {
+    for (let i = 0; i < nums.length; i++) {
+      arr.push(nums[i]);
+      dfs([...nums.slice(0, i), ...nums.slice(i + 1)], num + 1, arr);
+      arr.pop();
+    }
+  }
+};
+
+dfs(array, 0);
+
 const arr = ["A", "B", "C"];
 
 console.log(combination(arr, 3));
