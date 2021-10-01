@@ -8,6 +8,9 @@ function minWindow(s, t) {
   let l = 0;
   let r = -1;
   while (r < s.length) {
+    console.log(s.slice(l, r + 1));
+    console.log(map);
+    console.log("");
     if (cnt === 0) {
       if (!answer || r - l + 1 < answer.length) {
         answer = s.slice(l, r + 1);
@@ -29,7 +32,7 @@ function minWindow(s, t) {
       }
     }
   }
-  return ans;
+  return answer;
 }
 
 console.log(minWindow("ADOBECODEBANC", "ABC"));
