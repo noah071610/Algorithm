@@ -1,10 +1,11 @@
 var canJump = function (nums) {
-  let max = 0;
-  for (let i = 0; i < nums.length; i++) {
-    if (i > max) return false;
-    max = Math.max(max, i + nums[i]);
+  let max = nums.length - 1;
+  for (let i = max; i >= 0; i--) {
+    if (i + nums[i] >= max) {
+      max = i;
+    }
   }
-  return true;
+  return max === 0;
 };
 
 let nums = [2, 3, 1, 1, 4];

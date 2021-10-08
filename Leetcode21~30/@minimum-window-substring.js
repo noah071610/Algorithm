@@ -9,11 +9,11 @@ function minWindow(s, t) {
   let r = -1;
   while (r < s.length) {
     console.log(s.slice(l, r + 1));
-    console.log(map);
-    console.log("");
+    console.log(map, cnt);
     if (cnt === 0) {
       if (!answer || r - l + 1 < answer.length) {
         answer = s.slice(l, r + 1);
+        console.log("!!!", answer);
       }
       if (map[s[l]] !== undefined) {
         map[s[l]]++;
@@ -31,8 +31,9 @@ function minWindow(s, t) {
         cnt--;
       }
     }
+    console.log("");
   }
   return answer;
 }
 
-console.log(minWindow("ADOBECODEBANC", "ABC"));
+console.log(minWindow("BCAAAAAAAABC", "ABC"));
