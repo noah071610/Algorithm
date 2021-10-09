@@ -2,8 +2,8 @@ var longestPalindrome = function (s) {
   if (s.length < 1 || s === null) return "";
   let longest = "";
   for (let i = 0; i < s.length; i++) {
-    let oddPalin = expandAroundCenter(s, i, i);
-    let evenPalin = expandAroundCenter(s, i - 1, i);
+    let oddPalin = expandAroundCenter(i, i);
+    let evenPalin = expandAroundCenter(i - 1, i);
     if (oddPalin.length > longest.length) {
       longest = oddPalin;
     }
@@ -14,7 +14,7 @@ var longestPalindrome = function (s) {
   return longest;
 };
 
-function expandAroundCenter(s, leftIdx, rightIdx) {
+function expandAroundCenter(leftIdx, rightIdx) {
   let i = 0;
   while (s[leftIdx - i] && s[leftIdx - i] === s[rightIdx + i]) {
     i++;
