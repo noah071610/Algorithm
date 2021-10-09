@@ -31,7 +31,7 @@ function dfs(x, y) {
     board[y][x + 1] = "2";
     if (dfs(x + 1, y)) return true;
   }
-  if (y !== 0 && board[y][x - 1] === "0") {
+  if (x !== 0 && board[y][x - 1] === "0") {
     board[y][x - 1] = "2";
     if (dfs(x - 1, y)) return true;
   }
