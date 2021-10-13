@@ -17,7 +17,7 @@ Person.prototype.getName = function () {
   return this.name + "입니다.";
 };
 
-Person.prototype.getAge = function () {
+Person.prototype.getAge = () => {
   return this.age + "살 입니다.";
 };
 
@@ -48,7 +48,8 @@ Developer.prototype.makeGirlFriend = function () {
   this.girlFriend = true;
 };
 
-let me = new Person("hyunSoo", 2);
-let v = new Developer("장현수", 28);
+let me = new Person("hyunSoo", 28);
+let hyunsoo = new Developer("장현수", 28);
 
 console.log(me);
+console.log(hyunsoo.getName());
