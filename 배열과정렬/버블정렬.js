@@ -1,18 +1,14 @@
 function bubbleSort(array) {
   for (let i = 0; i < array.length; i++) {
-    let swap;
+    let naljiBreak = true;
     for (let j = 0; j < array.length - 1 - i; j++) {
       if (array[j] > array[j + 1]) {
-        swap = array[j];
-        array[j] = array[j + 1];
-        array[j + 1] = swap;
+        [array[j], array[j + 1]] = [array[j + 1], array[j]];
+        naljiBreak = false;
       }
-      console.log(array);
     }
-    if (!swap) {
-      break;
-    }
+    if (naljiBreak) break;
   }
   return array;
 }
-console.log(bubbleSort([5, 4, 3, 2, 1]));
+console.log(bubbleSort([2, 1, 3, 5, 4]));
