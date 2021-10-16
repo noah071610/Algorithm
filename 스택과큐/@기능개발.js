@@ -12,6 +12,7 @@ function solution(progresses, speeds) {
     }
     stack.push(day);
   }
+  console.log(stack);
   let day = 1;
   stack.reduce((acc, cur) => {
     if (acc >= cur) {
