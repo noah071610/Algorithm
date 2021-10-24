@@ -2,7 +2,7 @@ function solution(target, n) {
   let answer = "";
   let digit = "0123456789ABCDEF";
 
-  while (target > n) {
+  while (target > n - 1) {
     answer = digit[target % n] + answer;
     target = parseInt(target / n);
   }
@@ -14,10 +14,8 @@ function solution(target, n) {
 function getDecimal(target, n) {
   let answer = 0;
   let digit = "0123456789ABCDEF";
-  let j = target.length - 1;
-  for (let i = 0; i < target.length; i++) {
+  for (let i = 0, j = target.length - 1; i < target.length; i++, j--) {
     answer += digit.indexOf(target[i]) * n ** j;
-    j--;
   }
   return answer;
 }
@@ -36,7 +34,7 @@ function easy2solution(n) {
   return parseInt([...n.toString(3)].reverse().join(""), 3);
 }
 
-const input = { target: 322, num: 8 };
+const input = { target: 152, num: 2 };
 const getSome = solution(input.target, input.num);
 
 console.log(`10진법(${input.target}) => ${input.num}진법`, getSome);

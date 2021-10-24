@@ -5,6 +5,7 @@ var letterCombinations = function (digits) {
   let answer = [];
   let phoneLatters = [
     [],
+    [],
     ["a", "b", "c"],
     ["d", "e", "f"],
     ["g", "h", "i"],
@@ -14,14 +15,14 @@ var letterCombinations = function (digits) {
     ["t", "u", "v"],
     ["w", "x", "y", "z"],
   ];
-  function dfs(index, latter) {
-    if (index === digits.length) return answer.push(latter);
-    for (let i = 0; i < phoneLatters[Number(digits[index]) - 1].length; i++) {
-      dfs(index + 1, latter + phoneLatters[Number(digits[index]) - 1][i]);
+  function dfs(cnt, str) {
+    if (cnt === digits.length) return answer.push(str);
+    for (let i = 0; i < phoneLatters[Number(digits[cnt])].length; i++) {
+      dfs(cnt + 1, str + phoneLatters[Number(digits[cnt])][i]);
     }
   }
   dfs(0, "");
   return answer;
 };
 
-console.log(letterCombinations("4"));
+console.log(letterCombinations("23"));

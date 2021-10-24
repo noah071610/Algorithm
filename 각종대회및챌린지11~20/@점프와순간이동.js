@@ -1,15 +1,14 @@
 function solution(n) {
-  var battery = 0;
+  let bettery = 0;
   while (n > 0) {
-    console.log(n);
-    if (n % 2 !== 0) {
-      n = n - 1;
-      battery++;
+    if (n % 2 === 0) {
+      n /= 2;
     } else {
-      n = n / 2;
+      bettery++;
+      n -= 1;
     }
   }
-  return battery;
+  return bettery;
 }
 
 console.log(solution(7));

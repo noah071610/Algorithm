@@ -15,8 +15,10 @@ var merge = function (intervals) {
 };
 
 const intervals = [
-  [1, 4],
-  [0, 4],
+  [1, 3],
+  [2, 6],
+  [7, 10],
+  [15, 18],
 ];
 
 console.log(merge(intervals));
