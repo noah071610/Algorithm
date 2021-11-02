@@ -1,22 +1,19 @@
 function solution(skill, skill_trees) {
-  var answer = 0;
-  skill = skill.split("");
+  let answer = 0;
   skill_trees.forEach((v) => {
-    let first_skill = 0;
-    let naljiBreak = true;
+    let temp = skill.split("");
+    let naljiBreak = false;
     for (let i = 0; i < v.length; i++) {
-      if (skill.includes(v[i]) && naljiBreak) {
-        let target_skill = skill.indexOf(v[i]);
-        if (first_skill === target_skill) {
-          first_skill++;
-        } else {
-          naljiBreak = false;
-        }
+      let checker = temp.findIndex((k) => k === v[i]);
+      if (checker === -1) continue;
+      if (checker === 0) {
+        temp.shift();
+      } else {
+        naljiBreak = true;
+        break;
       }
     }
-    if (naljiBreak) {
-      answer++;
-    }
+    if (!naljiBreak) answer++;
   });
   return answer;
 }
