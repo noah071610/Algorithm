@@ -17,9 +17,7 @@ function solution(word) {
       }
     }
   }
-  for (let i = 0; i < 5; i++) {
-    if (!naljiBreak) dfs(0, "");
-  }
+  dfs(0, "");
   return cnt;
 }
 
