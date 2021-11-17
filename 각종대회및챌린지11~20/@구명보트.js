@@ -7,7 +7,6 @@ function solution(people, limit) {
     if (people[i] + people[j] <= limit) j--;
     answer++;
   }
-
   return answer;
 }
 const people = [50, 50, 40, 70, 60, 40, 30, 30];
